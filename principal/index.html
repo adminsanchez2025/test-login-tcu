@@ -1,1 +1,134 @@
 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="https://github.com/escumanejosanchezlimon/imagenes/blob/main/mainIco.png?raw=true" type="image/x-icon">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate">
+    <title>EscuelaManejoSanchezLimón</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </head>
+  <body>
+    
+    <header>
+      <h1 id="titulo-principal">Escuela de manejo</h1>
+      <div class="hamburger-menu">
+
+        <button class="hamburger" id="hamburger-btn">☰</button>
+
+      <div class="dropdown-menu" id="dropdown-menu">
+         
+  
+        <a id="opcionLogout"  >🔙 Cerrar sesión</a>
+        
+        <a id="opcionInfo"  >ℹ️ Información</a>
+
+
+      </div>
+    </div>
+      
+    </header>
+    <nav id="navbar">
+      <ul>
+        <li id="opcionSalir"><a href="#"><span class="material-symbols-outlined">exit_to_app</span>Inicio</a></li>
+        <li id="opcionServicios"><a href="#"><span class="material-symbols-outlined">Info</span>Servicios</a></li>
+        <li id="opcionContactos"><a href="#"><span class="material-symbols-outlined">call</span>Contacto</a></li>
+
+      </ul>
+    </nav>
+    <main id="main">
+      <article id="article1">
+        <h2 id="titulo">Prepárate para tu examen</h2>
+        <p id="parrafo">
+          Puedes poner en práctica tu conocimiento de la seguridad vial. Te recomendamos leer el
+          manual del conductor antes de comenzar.
+        </p>
+      </article>
+
+
+      <div class="container" style="display: none;">
+        
+    </div>
+
+
+      <div id="div-examenes">
+        <div id="div-button-container">
+          <button id="btn-examen" class="button-complement"> <p class="button-emoji">📝</p>  <b>Examen aleatorio</b></button>
+          <button id="btn-avance" class="button-complement"> <p class="button-emoji">📈</p>  <b>Avance</b></button>
+          <button id="tema1" class="button-option"> <p class="button-emoji">📚</p>  <b>1. Aspectos generales del tránsito y la seguridad vial</b></button>
+          <button id="tema2" class="button-option"> <p class="button-emoji">🚫</p> <b>2. Legislación de tránsito</b></button>
+          <button id="tema3" class="button-option"><p class="button-emoji">🛣️</p> <b>3. Factor vía y su entorno</b></button>
+          <button id="tema4" class="button-option"><p class="button-emoji">⚙️</p><b>&emsp;4. Factor vehículo</b></button>
+          <button id="tema5" class="button-option"><p class="button-emoji">👁️</p><b>&emsp;5. Factor humano</b></button>
+          <button id="tema6" class="button-option"><p class="button-emoji">🚦</p> <b>6. Normas de circulación</b></button>
+          <button id="tema7" class="button-option"><p class="button-emoji">🔄 </p><b>&emsp;7. Rotondas</b></button>
+          <button id="tema8" class="button-option"><p class="button-emoji">♻️</p><b> 8. El conductor y la contaminación ambiental</b></button>
+          <button id="tema9" class="button-option"><p class="button-emoji">💹</p> <b>9. Conducción técnica económica eficiente</b></button>
+          <button id="tema10" class="button-option"><p class="button-emoji">🏍️</p> <b>10. Conducción en motocicleta</b></button>
+        </div>
+      </div>
+
+
+      <div id="div-preguntas" style="display: none;"></div>
+   <!--<button id="button1">Abrir Modal</button>-->
+   
+   <article id="article2" style="display: none;">
+
+    <div>
+      <h2>Información general 📒</h2>
+      <p>La aplicación esta centrada para servir como material de apoyo práctico en la prueba teórica básica de educación vial. La cantidad de preguntas presentes junto con todos los capítulos es de aproximademente 258. </p>
+    </div>
+
+    <div>
+      <h2>Examen aleatorio 📝</h2>
+      <p>Es un simulacro de la prueba teórica, consta de 40 preguntas que puede incluir todos los capítulos del manual de conductor y un temporizador de 50 minutos.</p>
+    </div>
+
+    
+    <div>
+      <h2>Opción de Avance 📈</h2>
+      <p>Permite visualizar el progreso de aprendizaje, por el momento solamente guarda la calificación en la opciones de estudio sobre capítulos. Su porcentaje se basa en el número de preguntas correctas según también el número de preguntas selecciondas en el examen, cabe aclarar que los datos de su avance puede ser borrado en el botón que dice <b>'Eliminar progreso'</b>.</p>
+    </div>
+
+
+    <div>
+      <h2>Ir a contacto 📱</h2>
+      <p>En el apartado de contacto puedes dirigirte al WhatsApp del contacto dando click en el icono o ir a nuestra página de Facebook desde el enlace.</p>
+    </div>
+      
+   </article>
+    <div id="div-modalContainer"></div>
+
+        
+    
+    <div class="chart-container" id="chart-container"></div>
+    <div  class='div-c'><button id="btn-clearItem"  style="display: none;">Eliminar progreso</button></div>
+    <div  class='div-c'><button id="btn-next" onclick="" style="display: none;">Siguiente</button></div>
+
+    <div id="countdown"></div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p id="footer-contacto">Contacto: 8622-3009</p>
+        <p id="footer-direccion">Limón, Barrio Sandoval al Costado del Taller de Tracasa, Oficina Un Bus amarillo Limón, Limón, 70101</p>
+      </div>
+      <p>&copy; 2024 Edu. Todos los derechos reservados.</p>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script  src="scripts.js"></script>
+
+<script>
+</script>
+
+  </body>
+</html>
