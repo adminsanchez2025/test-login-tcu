@@ -287,3 +287,32 @@ function calcularDiferenciaHoras(dateaction) {
 function redondearNumero(numero, decimales) {
     return Number(numero.toFixed(decimales));
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const botones = document.querySelectorAll('.button-option');
+    botones.forEach(boton => {
+        boton.addEventListener('click', () => {
+            alert('Haz hecho clic en un botón con la clase "button-option"');
+        });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const botones = document.querySelectorAll('.button-complement');
+    botones.forEach(boton => {
+        boton.addEventListener('click', () => {
+            alert('Haz hecho clic en un botón con la clase "button-complement"');
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const botones = document.querySelectorAll('.button-nav');
+    botones.forEach(boton => {
+        boton.addEventListener('click', () => {
+            alert('Haz hecho clic en un botón con la clase "button-nav"');
+        });
+    });
+});
