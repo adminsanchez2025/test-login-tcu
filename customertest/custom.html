@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate">
+    <title>Appy</title>
+
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+ 
+
+
+  <div class="centered-container">
+
+    <button 
+    onclick="agregarTemporizador()" 
+    style="
+      padding: 15px 30px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    "
+    onmouseover="this.style.backgroundColor='#45a049'; this.style.transform='scale(1.05)'"
+    onmouseout="this.style.backgroundColor='#4CAF50'; this.style.transform='scale(1)'"
+    onmousedown="this.style.transform='scale(0.98)'"
+    onmouseup="this.style.transform='scale(1.05)'"
+  >
+    Abrir modal
+  </button>  </div>
+      <div id="div-modalContainer"></div>
+  
+          
+      
+      <div id="countdown"></div>
+  
+<script src="scripts.js"></script>
+  </body>
+</html>
